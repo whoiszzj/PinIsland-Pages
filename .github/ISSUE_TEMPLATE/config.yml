@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 私密问题请发邮件(Email for private matters)
+    url: mailto:whoiszzj@outlook.com
+    about: 涉及隐私或不想公开的内容,请通过邮件联系我们。
+  - name: 隐私政策与帮助文档(Privacy Policy & Help)
+    url: https://whoiszzj.github.io/PinIsland-Pages/
+    about: 查看 PinIsland 的隐私政策与常见问题。
