@@ -9,31 +9,39 @@
 <body>
 <nav class="top">
   <span class="brand">PinIsland</span>
-  <a href="privacy.html" aria-current="page">Privacy Policy</a><a href="support.html">Help & Support</a><a href="licenses.html">Third-Party Licenses</a>
+  <a href="privacy.html" aria-current="page">Privacy Policy</a><a href="support.html">Help &amp; Support</a><a href="licenses.html">Third-Party Licenses</a>
   <a href="../zh/index.html">中文</a>
 </nav>
 <main>
 <h1>Privacy Policy</h1>
-<p class='meta'>Effective date: September 3, 2026</p>
-<p>PinIsland is built with privacy first. This policy explains what happens to your data when you use the app — in short: everything stays on your device.</p>
-<h2>Data We Collect</h2>
-<p>PinIsland does not collect, store, or transmit any personal information. There is no account system, no advertising, no analytics, and no tracking of any kind.</p>
+<p class='meta'>Effective date: September 15, 2026</p>
+<p>PinIsland is designed to keep your content private. The app has no developer-operated server and does not automatically upload your screenshots or diagnostics. Most processing happens locally on your iPhone and, when enabled, your paired Apple Watch. Information leaves PinIsland only when you choose a system or external action described below.</p>
+<h2>What PinIsland Stores</h2>
+<p>PinIsland does not automatically transmit personal information to the developer. It has no account system, advertising, analytics, or tracking. To provide its features, the app stores user-selected screenshots, crops and previews, Pin state, preferences, a device-local free-Pin counter, and optional diagnostics locally. Each item is described below.</p>
 <h2>How Screenshots Are Handled</h2>
-<p>Screenshots you pin are processed entirely on your device, including the smart cropping model. No image is ever uploaded to a server or shared with any third party. Pinned screenshots are automatically deleted when the pin ends, unless you turn on “Keep screenshots after pin ends” in Settings — even then they remain only in the app’s private local storage and are never transmitted.</p>
+<p>Screenshots you select or create through Shortcuts, including Smart Crop processing, are handled locally. They remain in PinIsland on your iPhone until you delete them. If you choose Save to Photos, iOS adds a separate copy to your photo library; that copy follows your Photos and iCloud settings and is not deleted when you delete the PinIsland copy.</p>
 <h2>Local Settings &amp; Live Activity</h2>
-<p>Your preferences are saved locally on the device and shared only with the app’s own Live Activity widget, so the island behaves consistently. The widget only ever accesses the currently pinned screenshot. On the Lock Screen, you can choose “Hide preview” in Settings → Live Activity Display for extra privacy.</p>
+<p>Your preferences and current Pin state are stored locally and shared within PinIsland’s App Group with its Live Activity widget. The widget reads the currently pinned preview to render the Lock Screen and Dynamic Island. “Hide preview” blurs the Lock Screen image only; the Dynamic Island continues to show its preview.</p>
+<h2>Apple Watch Sync</h2>
+<p>If you use the paired Apple Watch app, PinIsland sends an optimized image copy, its Island preview, record identifiers and dates, current Pin state, and command results between your iPhone and Apple Watch through Apple’s WatchConnectivity service. These items are cached locally on the Watch so you can view and manage Pins. When you delete an image on the iPhone, its Watch copy is removed during the next successful reconciliation. Watch diagnostics are recorded or exported only when you enable or request the diagnostics features described below.</p>
+<h2>Purchases &amp; Payments</h2>
+<p>Purchases and restores are handled by Apple through StoreKit.<br><br>• PinIsland never receives your bank card or payment credentials.<br>• The app receives product information and Apple-verified transaction entitlement status needed to unlock the purchase.<br>• Your lifetime purchase is associated with your Apple Account by Apple and can be restored through Apple.<br>• Your free-Pin count is stored in a non-synchronizing Keychain item on this iPhone and does not follow your Apple Account or iCloud Keychain.</p>
+<h2>User-Initiated Diagnostics</h2>
+<p>PinIsland has an optional, off-by-default diagnostics log for troubleshooting.<br><br>• It records only after you enable it in Settings and stops automatically after 24 hours.<br>• Operational events such as import, crop, Pin, quota, purchase, and Watch sync are stored locally on your devices; only the most recent 24 hours are retained, with hard size limits.<br>• Screenshots, thumbnails, filenames, paths, URLs, email addresses, device identifiers, and payment data are not recorded.<br>• Nothing is uploaded or sent automatically. Export creates a local ZIP and opens the system share sheet. A recipient or service receives it only after you choose and confirm a destination; once shared externally, PinIsland cannot withdraw that copy.<br>• You can clear the local log at any time, which also stops current collection. Temporary export archives are removed after sharing or cancellation, with cleanup on the next launch as a fallback.</p>
 <h2>Shortcuts &amp; System Integration</h2>
-<p>PinIsland can optionally install a Siri Shortcut for faster pinning. The installation link simply opens Apple’s Shortcuts app; no data is sent or received in the process. You can remove the shortcut at any time in the Shortcuts app.</p>
-<h2>Third-Party Services</h2>
-<p>PinIsland uses no third-party SDKs, analytics services, or ad networks. The on-device smart crop model was trained using the FastViT-T8 architecture by Apple; see Third-Party Licenses for details.</p>
+<p>The optional installation link opens an iCloud Shortcut page hosted by Apple. Apple’s Shortcuts and iCloud services handle the network request and installation under Apple’s policies; PinIsland does not receive installation data or query whether the Shortcut is installed. When you run the Shortcut, the screenshot is passed to PinIsland for local processing. You can remove the Shortcut at any time in Apple’s Shortcuts app.</p>
+<h2>Apple &amp; External Services</h2>
+<p>PinIsland includes no third-party SDKs, analytics services, or ad networks. It invokes Apple system services for purchases, Photos/iCloud, Shortcuts/iCloud, Live Activities, and communication with your paired Apple Watch; Apple handles those services under its own policies. This public site and the feedback tracker are hosted by GitHub, and support email is handled by the email providers you choose. Those providers may process requests according to their own privacy policies. The on-device Smart Crop model uses Apple’s FastViT-T8 architecture; see Third-Party Licenses.</p>
+<h2>Retention, Deletion &amp; Choices</h2>
+<p>• Screenshots and their Pin metadata remain in PinIsland until you delete them; a paired Watch cache is removed after the deletion successfully syncs.<br>• Preferences remain in the app’s local or App Group storage while the related app components are installed.<br>• The free-Pin counter is device-local, does not synchronize, and may remain in Keychain after reinstalling on the same iPhone.<br>• Optional diagnostics retain only the most recent 24 hours and can be cleared at any time.<br>• Copies saved to Photos, files shared through the system share sheet, and information sent to support are outside PinIsland’s local storage and must be deleted through the destination service or recipient.<br><br>PinIsland has no developer-operated server copy of your screenshots, preferences, quota record, or local diagnostics for you to request us to delete. For support records we control, use the contact method below.</p>
 <h2>Contact Us</h2>
-<p>If you have any questions about this policy, please contact us at whoiszzj@outlook.com.</p>
+<p>If you email us or submit a GitHub issue, the developer receives the information you choose to provide, such as your email or GitHub account, message, attachments, and an optional diagnostics ZIP. We use it only to respond, troubleshoot, and prevent abuse—not for advertising or tracking—and retain it only as reasonably necessary for those purposes or legal obligations. Public GitHub issues can be seen by others, so do not post sensitive content. You may ask us to delete support records we control by emailing whoiszzj@outlook.com; information held by an external provider is subject to that provider’s policies.</p>
 <h2>Changes to This Policy</h2>
-<p>If this policy changes, the updated version will be published on this page and on the app’s official website.</p>
+<p>When this policy changes, we will publish the revised version here and update the effective date above. Material changes will be reflected before or when the related app feature becomes available.</p>
 </main>
 <footer>
   <p>© 2026 PinIsland · Contact: <span class='email'>whoiszzj@outlook.com</span></p>
-  <p><a href="../index.html">About & Support</a></p>
+  <p><a href="../index.html">About &amp; Support</a></p>
 </footer>
 </body>
 </html>
